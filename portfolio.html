@@ -24,26 +24,28 @@
       <div class="container nav-flex">
         <nav class="header-nav nav-flex">
           <a href="index.html" class="logo logo-black"><span class="logo-web">Web</span>Studio</a>
-          <ul class="link-list site-nav">
-            <li class="lst nav-item"><a href="index.html" class="link">Студія</a></li>
-            <li class="lst nav-item">
-              <a href="portfolio.html" class="link current">Портфоліо</a>
+          <ul class="site-nav">
+            <li class="site-nav__item lst">
+              <a href="index.html" class="site-nav__link">Студія</a>
             </li>
-            <li class="lst nav-item"><a href="" class="link">Контакти</a></li>
+            <li class="site-nav__item lst">
+              <a href="portfolio.html" class="site-nav__link site-nav__link--current">Портфоліо</a>
+            </li>
+            <li class="site-nav__item lst"><a href="" class="site-nav__link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="list">
-          <li class="lst contact-item">
-            <a class="link link-list" href="mailto:info@devstudio.com"
-              ><svg class="contact-icon" width="16" height="12">
+        <ul class="contact-list">
+          <li class="contact-list__item lst">
+            <a class="contact-list__link" href="mailto:info@devstudio.com"
+              ><svg class="contact-list__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
 
-          <li class="lst contact-item contact-item1">
-            <a class="link link-list" href="tel:+380961111111"
-              ><svg class="contact-icon" width="10" height="16">
+          <li class="contact-list__item contact-list__item1 lst">
+            <a class="contact-list__link" href="tel:+380961111111"
+              ><svg class="contact-list__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-mobile"></use></svg
               >+38 096 111 11 11</a
             >
@@ -232,51 +234,51 @@
             <a href="index.html" class="logo logo-white"><span class="logo-web">Web</span>Studio</a>
             <address class="footer-adress">
               <ul class="adress-list">
-                <li class="lst">
+                <li class="adress-list__item lst">
                   <a
                     href="https://www.google.com.ua/maps/@50.4851493,30.4721233,14z?hl=ru"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="adress-link link1"
+                    class="adress-list__link link1"
                     >м. Київ, пр-т Лесі Українки, 26</a
                   >
                 </li>
-                <li class="lst">
-                  <a href="mailto:info@devstudio.com" class="adress-link link"
+                <li class="adress-list__item lst">
+                  <a href="mailto:info@devstudio.com" class="adress-list__link link"
                     >info@devstudio.com</a
                   >
                 </li>
-                <li class="lst">
-                  <a href="tel:+380961111111" class="adress-link link">+38 096 111 11 11</a>
+                <li class="adress-list__item lst">
+                  <a href="tel:+380961111111" class="adress-list__link link">+38 096 111 11 11</a>
                 </li>
               </ul>
             </address>
           </div>
           <div class="social-flex">
-            <p class="social-text">Приєднуйтесь</p>
+            <p class="social-flex__text">Приєднуйтесь</p>
             <ul class="footer-icons">
-              <li class="team-bcg footer-bcg">
+              <li class="team__bcg footer__bcg">
                 <a class="social-link footer-link" href="">
                   <svg class="team-icon footer-icon">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="team-bcg footer-bcg">
+              <li class="team__bcg footer__bcg">
                 <a class="social-link footer-link" href="">
                   <svg class="team-icon">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="team-bcg footer-bcg">
+              <li class="team__bcg footer__bcg">
                 <a class="social-link footer-link" href="">
                   <svg class="team-icon">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="team-bcg footer-bcg">
+              <li class="team__bcg footer__bcg">
                 <a class="social-link footer-link" href="">
                   <svg class="team-icon footer-icon">
                     <use href="./images/icons.svg#icon-linkedin"></use>
@@ -286,18 +288,18 @@
             </ul>
           </div>
           <div class="subscribe-flex">
-            <p class="social-text">Підпишіться на розсилку</p>
-            <label class="footer-submit-label" for="submit-mail"></label>
+            <p class="social-flex__text">Підпишіться на розсилку</p>
+            <label class="subscribe-flex__submit-label" for="submit-mail"></label>
             <input
-              class="footer-input"
+              class="subscribe-flex__submit-input"
               type="email"
               name="submit-mail"
               id="submit-mail"
               placeholder="E-mail"
             />
-            <button class="footer-submit-btn" type="submit">
+            <button class="subscribe-flex__submit-button" type="submit">
               Підписатися
-              <svg class="footer-icon">
+              <svg class="footer__icon">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>

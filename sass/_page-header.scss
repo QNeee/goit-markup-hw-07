@@ -1,4 +1,5 @@
 .header {
+
     border: 1px solid #ececec;
     background-color: $filter-secondarycolor;
 }
@@ -43,6 +44,7 @@
     display: flex;
     margin-left: 93px;
 
+
     &__item {
         position: relative;
         display: block;
@@ -56,6 +58,13 @@
     }
 
     &__link {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: $primary-text;
         text-decoration: none;
     }
 
@@ -104,6 +113,15 @@
     }
 
     &__link {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: $secondary-text;
+        display: inline-flex;
+        align-items: center;
         text-decoration: none;
     }
 
