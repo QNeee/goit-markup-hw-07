@@ -170,10 +170,14 @@
     }
 
     &__link {
+        margin-left: 4px;
         color: $accent-color;
     }
 
     &__label {
+        align-items: center;
+        justify-content: center;
+        display: flex;
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
@@ -215,7 +219,7 @@
 
     &:hover,
     &:focus {
-        background-color: brown;
+        background-color: #188ce8;
         color: white;
     }
 }
