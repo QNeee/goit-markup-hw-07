@@ -50,6 +50,7 @@
         background-color: $accent-color;
         color: $filter-secondarycolor;
         cursor: pointer;
+        transition: color $wait $caubic;
     }
 
     &__button:hover,

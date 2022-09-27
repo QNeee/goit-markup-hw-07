@@ -106,6 +106,7 @@
     letter-spacing: 0.03em;
 
     color: $footer-linkcolor;
+    transition: color $wait $caubic;
   }
 
   &__link:hover,

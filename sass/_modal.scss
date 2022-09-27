@@ -79,6 +79,7 @@
         height: 120px;
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
+        transition: color $wait $caubic;
 
         &:hover,
         &:focus {
@@ -217,6 +218,7 @@
     width: 200px;
     height: 50px;
     margin-top: 30px;
+    transition: color $wait $caubic;
 
     &:hover,
     &:focus {

@@ -66,10 +66,12 @@
         letter-spacing: 0.02em;
         color: $primary-text;
         text-decoration: none;
+        transition: color $wait $caubic;
     }
 
     &__link--current {
         color: $accent-color;
+        transition: color $wait $caubic;
 
     }
 
@@ -128,6 +130,7 @@
     &__icon {
         margin-right: 10px;
         fill: currentColor;
+        transition: color $wait $caubic;
     }
 
     &__icon:hover,
