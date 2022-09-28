@@ -82,7 +82,13 @@
       height: 50px;
       margin-left: 12px;
       padding-left: 28px;
+      transition: $wait $caubic;
 
+      &:hover,
+      &:focus {
+        background-color: #188ce8;
+        color: white;
+      }
     }
   }
 }

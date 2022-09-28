@@ -39,7 +39,19 @@
         height: 30px;
         border: 1px solid rgba(0, 0, 0, 0.2);
         cursor: pointer;
+        transition: fill $wait $caubic;
+
+        &:hover,
+        &:focus {
+            fill: $accent-color;
+        }
     }
+}
+
+.form {
+    padding: 40px;
+
+
 }
 
 .form-teg {
@@ -48,12 +60,11 @@
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-
-    padding-top: 40px;
-    padding-bottom: 12px;
 }
 
 .form-list {
+    margin-top: 12px;
+
     &__comment-label {
         margin-top: 4px;
         font-weight: 400;
@@ -79,7 +90,7 @@
         height: 120px;
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
-        transition: color $wait $caubic;
+        transition: color $wait $caubic, border $wait $caubic;
 
         &:hover,
         &:focus {
@@ -88,9 +99,7 @@
         }
     }
 
-    &__item {
-        padding-left: 41px;
-    }
+
 
     &__label {
         margin-top: 4px;
@@ -110,6 +119,7 @@
         border-radius: 4px;
         padding-left: 40px;
         cursor: pointer;
+        transition: color $wait $caubic, border $wait $caubic;
 
         &:hover,
         &:focus {
@@ -177,12 +187,17 @@
     &__link {
         margin-left: 4px;
         color: $accent-color;
+        transition: $wait $caubic;
+
+        &:hover,
+        &:focus {
+            color: $caubic;
+        }
     }
 
     &__label {
-        align-items: center;
-        justify-content: center;
-        display: flex;
+
+        text-align: center;
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
