@@ -18,7 +18,7 @@
         text-align: center;
         letter-spacing: 0.03em;
         cursor: pointer;
-        transition: color $wait $caubic;
+        transition: color $wait $caubic, box-shadow $wait $caubic;
 
         &:hover,
         &:focus {
@@ -114,6 +114,7 @@
 
     &__item {
         margin-bottom: 30px;
+        transition: color $wait $caubic, box-shadow $wait $caubic;
     }
 
     &__item:nth-child(3n + 3) {
