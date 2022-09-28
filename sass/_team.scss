@@ -76,11 +76,11 @@
     display: block;
     border-radius: 50%;
     color: #afb1b8;
-    transition: color $wait $caubic;
+    transition: background-color $wait $caubic, color $wait $caubic;
 
 
     &:hover,
-    &focus {
+    &:focus {
         background-color: $accent-color;
         color: $filter-secondarycolor;
     }
