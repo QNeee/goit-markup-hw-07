@@ -191,7 +191,7 @@
 
         &:hover,
         &:focus {
-            color: $caubic;
+            color: blue;
         }
     }
 
@@ -216,6 +216,8 @@
     }
 
     &__icon-check {
+        position: relative;
+        top: 2px;
         display: inline-block;
         width: 16px;
         height: 15px;
