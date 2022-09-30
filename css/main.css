@@ -117,6 +117,9 @@ ul {
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.site-nav__link:hover, .site-nav__link:focus {
+  color: #2196f3;
+}
 .site-nav__link--current {
   color: #2196f3;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -131,9 +134,6 @@ ul {
   height: 3px;
   background-color: #2196f3;
   border-radius: 3px;
-}
-.site-nav__link:hover, .site-nav__link:focus {
-  color: #2196f3;
 }
 
 .contact-list {
@@ -170,7 +170,7 @@ ul {
   fill: currentColor;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-list__icon:hover, .contact-list__icon:hover:focus, .contact-list__link:hover, .contact-list__link:focus {
+.contact-list__icon:hover, .contact-list__icon:focus, .contact-list__link:hover, .contact-list__link:focus {
   color: #2196f3;
 }
 

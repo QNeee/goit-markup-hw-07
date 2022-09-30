@@ -114,11 +114,11 @@
 
     color: $footer-linkcolor;
     transition: color $wait $caubic;
-  }
 
-  &__link:hover,
-  &__link:focus {
-    color: $accent-color;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
 }
 

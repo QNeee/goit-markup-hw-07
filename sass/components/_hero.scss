@@ -51,11 +51,13 @@
         color: $filter-secondarycolor;
         cursor: pointer;
         transition: color $wait $caubic;
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
+            background-color: $filter-secondarycolor;
+        }
     }
 
-    &__button:hover,
-    &__button:focus {
-        color: $accent-color;
-        background-color: $filter-secondarycolor;
-    }
+
 }

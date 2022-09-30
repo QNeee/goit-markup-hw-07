@@ -25,13 +25,15 @@
     background-color: #fff;
     padding: 16px 32px;
     transition: color $wait $caubic;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      border-color: $accent-color;
+    }
   }
 
-  &__link:hover,
-  &__link:focus {
-    color: $accent-color;
-    border-color: $accent-color;
-  }
+
 
   &__icon {
     fill: currentColor;

@@ -67,6 +67,12 @@
         color: $primary-text;
         text-decoration: none;
         transition: color $wait $caubic;
+
+        &:hover,
+        &:focus {
+
+            color: $accent-color;
+        }
     }
 
     &__link--current {
@@ -85,12 +91,6 @@
         height: 3px;
         background-color: $accent-color;
         border-radius: 3px;
-    }
-
-    &__link:hover,
-    &__link:focus {
-
-        color: $accent-color;
     }
 }
 
@@ -134,7 +134,7 @@
     }
 
     &__icon:hover,
-    &__icon:hover:focus,
+    &__icon:focus,
     &__link:hover,
     &__link:focus {
         color: $accent-color;
