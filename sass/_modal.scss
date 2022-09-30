@@ -51,15 +51,14 @@
 .form {
     padding: 40px;
 
+    &-teg {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
 
-}
-
-.form-teg {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
 }
 
 .form-list {
@@ -157,16 +156,18 @@
         height: 18px;
         transition: fill $wait $caubic;
     }
+
+    &__input:hover~&__name-icon,
+    &__input:focus~&__name-icon,
+    &__input:hover~&__phone-icon,
+    &__input:focus~&__phone-icon,
+    &__input:hover~&__mail-icon,
+    &__input:focus~&__mail-icon {
+        fill: $accent-color;
+    }
 }
 
-.form-list__input:hover~.form-list__name-icon,
-.form-list__input:focus~.form-list__name-icon,
-.form-list__input:hover~.form-list__phone-icon,
-.form-list__input:focus~.form-list__phone-icon,
-.form-list__input:hover~.form-list__mail-icon,
-.form-list__input:focus~.form-list__mail-icon {
-    fill: $accent-color;
-}
+
 
 .policy-button {
     text-align: center;
