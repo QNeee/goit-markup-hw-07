@@ -57,7 +57,7 @@
       <section class="hero">
         <!--button-->
         <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-        <button data-modal-open type="button" class="hero__button">Замовити послугу</button>
+        <button data-modal-open type="button" class="button">Замовити послугу</button>
       </section>
       <section class="section">
         <div class="container">
@@ -441,52 +441,47 @@
           </svg>
         </button>
         <form class="form">
-          <p class="form-teg">Залиште свої дані, ми вам передзвонимо</p>
-          <div class="form-list">
-            <label class="form-list__label" for="name">Імя</label>
+          <p class="form__title">Залиште свої дані, ми вам передзвонимо</p>
+          <div class="form__list">
+            <label class="form__list__label" for="name">Імя</label>
             <p>
-              <input class="form-list__input" type="text" name="name" id="name" placeholder=" " />
-              <svg class="form-list__name-icon">
+              <input class="form__list__input" type="text" name="name" id="name" placeholder=" " />
+              <svg class="form__list__name-icon">
                 <use href="./images/icons.svg#icon-name"></use>
               </svg>
             </p>
-            <label class="form-list__label" for="tel">Телефон</label>
+            <label class="form__list__label" for="tel">Телефон</label>
             <p>
-              <input class="form-list__input" type="tel" name="tel" id="tel" placeholder=" " />
-              <svg class="form-list__phone-icon">
+              <input class="form__list__input" type="tel" name="tel" id="tel" placeholder=" " />
+              <svg class="form__list__phone-icon">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </p>
-            <label class="form-list__label" for="mail">Пошта</label>
+            <label class="form__list__label" for="mail">Пошта</label>
             <p>
-              <input class="form-list__input" type="email" name="mail" id="mail" placeholder=" " />
-              <svg class="form-list__mail-icon">
+              <input class="form__list__input" type="email" name="mail" id="mail" placeholder=" " />
+              <svg class="form__list__mail-icon">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
             </p>
-            <label class="form-list__comment-label" for="comment">Комментарій</label>
+            <label class="form__list__comment-label" for="comment">Комментарій</label>
             <p>
               <textarea
-                class="form-list__comment"
+                class="form__list__comment"
                 name="comment"
                 id="comment"
                 placeholder="Введіть текст"
               ></textarea>
             </p>
           </div>
-          <div class="policy-button">
-            <label class="policy-button__label" for="policy">
-              <input
-                class="policy-button__form-checkbox"
-                type="checkbox"
-                name="policy"
-                id="policy"
-              />
-              <span class="policy-button__icon-check"></span>
+          <div class="form__policy">
+            <label class="form__policy__label" for="policy">
+              <input class="form__policy__checkbox" type="checkbox" name="policy" id="policy" />
+              <span class="form__policy__icon-check"></span>
               Погоджуюся з розсилкою та приймаю
-              <a class="policy-button__link" href="">Умови договору</a>
+              <a class="form__policy__link" href="">Умови договору</a>
             </label>
-            <button class="hero__button submit-button" type="submit">Відправити</button>
+            <button class="button form__button" type="submit">Відправити</button>
           </div>
         </form>
       </div>

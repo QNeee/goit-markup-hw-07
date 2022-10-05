@@ -57,6 +57,30 @@ ul {
   overflow: hidden;
 }
 
+.button {
+  display: inline-block;
+  min-width: 200px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 10px 32px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  background-color: #2196f3;
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button:hover, .button:focus {
+  color: #2196f3;
+  background-color: #ffffff;
+}
+
 .header {
   border: 1px solid #ececec;
   background-color: #ffffff;
@@ -199,29 +223,6 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-}
-.hero__button {
-  display: inline-block;
-  min-width: 200px;
-  border-radius: 4px;
-  border: 1px solid transparent;
-  padding: 10px 32px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  background-color: #2196f3;
-  color: #ffffff;
-  cursor: pointer;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hero__button:hover, .hero__button:focus {
-  color: #2196f3;
-  background-color: #ffffff;
 }
 
 .section {
@@ -577,18 +578,25 @@ ul {
 .form {
   padding: 40px;
 }
-.form-teg {
+.form__button {
+  margin-top: 30px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__button:hover, .form__button:focus {
+  background-color: #188ce8;
+  color: white;
+}
+.form__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
 }
-
-.form-list {
+.form__list {
   margin-top: 12px;
 }
-.form-list__comment-label {
+.form__list__comment-label {
   margin-top: 4px;
   font-weight: 400;
   font-size: 12px;
@@ -596,7 +604,7 @@ ul {
   letter-spacing: 0.01em;
   color: #757575;
 }
-.form-list__comment {
+.form__list__comment {
   padding: 12px 16px;
   margin-top: 4px;
   width: 448px;
@@ -611,11 +619,11 @@ ul {
   color: rgb(117, 117, 117);
   resize: none;
 }
-.form-list__comment:hover, .form-list__comment:focus {
+.form__list__comment:hover, .form__list__comment:focus {
   outline: none;
   border-color: #2196f3;
 }
-.form-list__label {
+.form__list__label {
   margin-top: 4px;
   font-weight: 400;
   font-size: 12px;
@@ -623,7 +631,7 @@ ul {
   letter-spacing: 0.01em;
   color: #757575;
 }
-.form-list__input {
+.form__list__input {
   position: relative;
   margin-bottom: 10px;
   width: 448px;
@@ -634,11 +642,11 @@ ul {
   cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-list__input:hover, .form-list__input:focus {
+.form__list__input:hover, .form__list__input:focus {
   outline: none;
   border-color: #2196f3;
 }
-.form-list__name-icon {
+.form__list__name-icon {
   margin-left: 5px;
   position: absolute;
   top: 105px;
@@ -647,7 +655,7 @@ ul {
   height: 18px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-list__phone-icon {
+.form__list__phone-icon {
   margin-left: 5px;
   position: absolute;
   left: 50px;
@@ -656,7 +664,7 @@ ul {
   height: 18px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-list__mail-icon {
+.form__list__mail-icon {
   margin-left: 5px;
   position: absolute;
   left: 50px;
@@ -665,15 +673,15 @@ ul {
   height: 18px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-list__input:hover ~ .form-list__name-icon, .form-list__input:focus ~ .form-list__name-icon, .form-list__input:hover ~ .form-list__phone-icon, .form-list__input:focus ~ .form-list__phone-icon, .form-list__input:hover ~ .form-list__mail-icon, .form-list__input:focus ~ .form-list__mail-icon {
+.form__list__input:hover ~ .form__list__name-icon, .form__list__input:focus ~ .form__list__name-icon, .form__list__input:hover ~ .form__list__phone-icon, .form__list__input:focus ~ .form__list__phone-icon, .form__list__input:hover ~ .form__list__mail-icon, .form__list__input:focus ~ .form__list__mail-icon {
   fill: #2196f3;
 }
 
-.policy-button {
+.form__policy {
   text-align: center;
   margin-top: 20px;
 }
-.policy-button__form-checkbox:checked + .policy-button__icon-check {
+.form__policy__checkbox:checked + .form__policy__icon-check {
   background-image: url(../images/check.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -682,15 +690,15 @@ ul {
   border-color: #2196f3;
   color: white;
 }
-.policy-button__link {
+.form__policy__link {
   margin-left: 4px;
   color: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.policy-button__link:hover, .policy-button__link:focus {
+.form__policy__link:hover, .form__policy__link:focus {
   color: #212121;
 }
-.policy-button__label {
+.form__policy__label {
   text-align: center;
   font-weight: 400;
   font-size: 14px;
@@ -698,7 +706,7 @@ ul {
   letter-spacing: 0.03em;
   color: #757575;
 }
-.policy-button__form-checkbox {
+.form__policy__checkbox {
   appearance: none;
   font-weight: 400;
   font-size: 14px;
@@ -707,7 +715,7 @@ ul {
   align-items: center;
   color: #757575;
 }
-.policy-button__icon-check {
+.form__policy__icon-check {
   position: relative;
   top: 2px;
   display: inline-block;
@@ -716,17 +724,6 @@ ul {
   border: 2px solid #212121;
   border-radius: 2px;
   margin-right: 7px;
-}
-
-.submit-button {
-  width: 200px;
-  height: 50px;
-  margin-top: 30px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.submit-button:hover, .submit-button:focus {
-  background-color: #188ce8;
-  color: white;
 }
 
 textarea::placeholder {
