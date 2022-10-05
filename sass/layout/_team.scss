@@ -45,19 +45,28 @@
         margin-right: 30px;
     }
 
-    &__bcg:not(:last-child) {
+    &__wraper:not(:last-child) {
         margin-right: 10px;
     }
 
     &-icons {
         display: flex;
         list-style-type: none;
-        margin-left: 32px;
-        margin-top: 16px;
         width: 206px;
         height: 44px;
 
+        &--command {
+            margin-left: 32px;
+            margin-top: 16px;
+        }
+
+        &--basement {
+            margin: 0;
+            padding: 0;
+        }
     }
+
+
 
     &-icon {
         width: 20px;
