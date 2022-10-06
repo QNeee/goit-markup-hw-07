@@ -2,8 +2,18 @@
     padding-top: 94px;
     background-color: $primary-bcg;
 
+    &__wraper:not(:last-child) {
+        margin-right: 10px;
+    }
+
     &-list {
         display: flex;
+
+        &__social {
+            margin-left: 32px;
+            margin-top: 16px;
+        }
+
     }
 
     &-list h3 {
@@ -45,9 +55,7 @@
         margin-right: 30px;
     }
 
-    &__wraper:not(:last-child) {
-        margin-right: 10px;
-    }
+
 
     &-icons {
         display: flex;
@@ -55,14 +63,10 @@
         width: 206px;
         height: 44px;
 
-        &--command {
-            margin-left: 32px;
-            margin-top: 16px;
-        }
-
-        &--basement {
-            margin: 0;
-            padding: 0;
+        &--basement .team__link {
+            color: #ffffff;
+            background-color: #ffffff10;
+            transition: background-color $wait $caubic, color $wait $caubic;
         }
     }
 
@@ -79,7 +83,7 @@
 }
 
 
-.social-link {
+.team__link {
     width: 44px;
     height: 44px;
     display: block;
